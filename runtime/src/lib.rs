@@ -31,6 +31,8 @@ extern crate srml_upgrade_key as upgrade_key;
 extern crate srml_aura as aura;
 extern crate substrate_consensus_aura_primitives as consensus_aura;
 
+mod demo;
+
 use rstd::prelude::*;
 #[cfg(feature = "std")]
 use primitives::bytes;
@@ -96,8 +98,8 @@ pub mod opaque {
 
 /// This runtime version.
 pub const VERSION: RuntimeVersion = RuntimeVersion {
-	spec_name: create_runtime_str!("substrate-node-template"),
-	impl_name: create_runtime_str!("substrate-node-template"),
+	spec_name: create_runtime_str!("demo"),
+	impl_name: create_runtime_str!("demo-node"),
 	authoring_version: 1,
 	spec_version: 1,
 	impl_version: 0,
