@@ -32,6 +32,7 @@ extern crate srml_aura as aura;
 extern crate substrate_consensus_aura_primitives as consensus_aura;
 
 mod demo;
+mod iou;
 
 use rstd::prelude::*;
 #[cfg(feature = "std")]
